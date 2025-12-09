@@ -51,7 +51,7 @@ V ✅ <b>(for all editions)</b><br>
 10. Name it <b>HideRecommendedSection</b> and hit Enter. Double click it and change value from 0 to 1.<br>
 12. <b>Restart the Windows</b> so it can take effect!
 <hr>
-<b>3. 🌐 Remove Web Search from the Search Menu</b><br><br>
+<b>4. 🌐 Remove Web Search from the Search Menu</b><br><br>
 <img width="400" height="342.5" alt="web" src="https://github.com/user-attachments/assets/295164cd-6564-46cd-b026-8bc7deb1581c" /><br>
 1. Search and open <b>Registry Editor</b> and press Yes when <i>User Account Control</i> pops up.<br>
 2. Go to <b>Computer\HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\Explorer</b> (copy and paste the path in the Registry Editor)<br>
