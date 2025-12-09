@@ -5,7 +5,7 @@ Working editions: <b>Home, Pro, Enterprise</b><br>
 Working versions: <b>23H2, 24H2, 25H2</b>
 <hr>
 ⚠️ <b>READ THIS BEFORE MOVING FORWARD!</b><br>
-Editing the Windows Registry can cause serious system problems, including system instability as software might stop working as expected. Always create a <b><a href="https://support.microsoft.com/en-us/windows/system-restore-a5ae3ed9-07c4-fd56-45ee-096777ecd14e" target="_blank">restore point</a></b> beforehand, back up the registry, and follow steps strictly — using the exact key names and values provided.
+Editing the Windows Registry can cause serious system problems, including system instability as software might stop working as expected. Always create a <b><a href="https://support.microsoft.com/en-us/windows/system-restore-a5ae3ed9-07c4-fd56-45ee-096777ecd14e" target="_blank">restore point</a></b> beforehand, back up the registry, and follow steps strictly — using the exact key names and values provided. Everything is <b>CASE-SENSITIVE</b> and every name, word or number should be <b>EXACTLY</b> as this guide is showing!
 <hr>
 <b>1. 🕗 Show seconds in Windows Clock</b><br><br>
 <img width="95" height="50" alt="Time" src="https://github.com/user-attachments/assets/ab8d5da5-07fa-4c29-8886-7a8f2540d8a3" /><br><br>
