@@ -14,7 +14,7 @@ Editing the Windows Registry can cause serious system problems, including system
 1. Search and open <b>Registry Editor</b> and press Yes when <i>User Account Control</i> pops up.<br>
 2. Go to <b>Computer\HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced</b> (copy and paste the path in the Registry Editor)<br>
 3. On the right side look for value called <b>ShowSecondsInSystemClock</b><br>
-4. If the value exists, double click it and change value data from 0 to 1.<br>
+4. If the value exists, double click it and change value from 0 to 1.<br>
 5. <b>If value does not exist</b>, right click the empty space on the right side, hover over <b>New ></b> and click <b>DWORD (32-bit) Value</b><br>
 6. Name it <b>ShowSecondsInSystemClock</b> and hit Enter. Double click it and change value from 0 to 1.<br>
 7. Open <b>Task Manager</b> go to <b>Processes</b> tab and search for <b>Windows Explorer</b> process. <b>Right click it and hit restart.</b><br>
@@ -50,4 +50,13 @@ V ✅ <b>(for all editions)</b><br>
 9. Right click the empty space on the right side, hover over <b>New ></b> and click <b>DWORD (32-bit) Value</b><br>
 10. Name it <b>HideRecommendedSection</b> and hit Enter. Double click it and change value from 0 to 1.<br>
 12. <b>Restart the Windows</b> so it can take effect!
+<hr>
+<b>3. 🌐 Remove Web Search from the Search Menu</b><br><br>
+<img width="400" height="342.5" alt="web" src="https://github.com/user-attachments/assets/295164cd-6564-46cd-b026-8bc7deb1581c" /><br>
+1. Search and open <b>Registry Editor</b> and press Yes when <i>User Account Control</i> pops up.<br>
+2. Go to <b>Computer\HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\Explorer</b> (copy and paste the path in the Registry Editor)<br>
+3. Look for key (folders on the left side) named <b>Explorer</b>. If it doesn't exist, right click parent folder <b>Windows</b> and hover over <b>New ></b> and click <b>Key</b><br>
+4. Name it <b>Explorer</b> and hit Enter. Click the newly created folder and right click the empty space on the right side, hover over <b>New ></b> and click <b>DWORD (32-bit) Value</b><br>
+5. Name it <b>DisableSearchBoxSuggestions</b> and hit Enter. Double click it and change value from 0 to 1.<br>
+6. <b>Restart the Windows</b> so it can take effect!
 <hr>
