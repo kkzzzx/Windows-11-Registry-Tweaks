@@ -32,8 +32,8 @@ V 📢 <b>(for Pro / Enterprise editions only)</b><br>
 V ✅ <b>(for all editions)</b><br>
 8. Search and open <b>Registry Editor</b> and press Yes when <i>User Account Control</i> pops up.<br>
 9. Go to <b>Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows</b> (copy and paste the path in the Registry Editor)<br>
-10. Look for key (folders on the left side) named <b>Windows Update</b>. If it doesn't exist, right click parent folder <b>Windows</b> and hover over <b>New ></b> and click <b>Key</b><br>
-11. Name it <b>Windows Update</b> and hit Enter. Click the newly created folder and right click the empty space on the right side, hover over <b>New ></b> and click <b>DWORD (32-bit) Value</b><br>
+10. Look for key (folders on the left side) named <b>WindowsUpdate</b>. If it doesn't exist, right click parent folder <b>Windows</b> and hover over <b>New ></b> and click <b>Key</b><br>
+11. Name it <b>WindowsUpdate</b> and hit Enter. Click the newly created folder and right click the empty space on the right side, hover over <b>New ></b> and click <b>DWORD (32-bit) Value</b><br>
 12. Name it <b>ExcludeWUDriversInQualityUpdate</b> and hit Enter. Double click it and change value from 0 to 1.<br>
 13. <b>Restart the Windows</b> so it can take effect!
 <hr>
