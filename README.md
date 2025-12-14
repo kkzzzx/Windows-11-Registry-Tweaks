@@ -60,3 +60,12 @@ V ✅ <b>(for all editions)</b><br>
 5. Name it <b>DisableSearchBoxSuggestions</b> and hit Enter. Double click it and change value from 0 to 1.<br>
 6. <b>Restart the Windows</b> so it can take effect!
 <hr>
+<b>5. ↗️ Remove shortcut arrow icon</b><br><br>
+<img width="160" height="96" alt="chrome" src="https://github.com/user-attachments/assets/dba2fa36-a095-4188-9b85-fe7bb94456d8" /><br>
+1. Search and open <b>Registry Editor</b> and press Yes when <i>User Account Control</i> pops up.<br>
+2. Go to <b>Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer</b> (copy and paste the path in the Registry Editor)<br>
+3. Right click parent folder <b>Explorer</b> and hover over <b>New ></b> and click <b>Key</b><br>
+4. Name it <b>Shell Icons</b> and hit Enter. Click the newly created folder and right click the empty space on the right side, hover over <b>New ></b> and click <b>String Value</b><br>
+5. Name it <b>29</b> and hit Enter. Double click it and set the value to <b>C:\Windows\System32\imageres.dll,197</b><br>
+6. <b>Restart the Windows</b> so it can take effect!
+<hr>
