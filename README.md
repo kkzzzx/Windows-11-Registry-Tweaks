@@ -5,7 +5,7 @@ Working editions: <b>Home, Pro, Enterprise</b><br>
 Working versions: <b>23H2, 24H2, 25H2</b>
 <hr>
 ⚠️ <b>READ THIS BEFORE MOVING FORWARD!</b><br>
-Editing the Windows Registry can cause serious system problems, including system instability as software might stop working as expected. Always create a <b><a href="https://support.microsoft.com/en-us/windows/system-restore-a5ae3ed9-07c4-fd56-45ee-096777ecd14e" target="_blank">restore point</a></b> beforehand, back up the registry, and follow steps strictly — using the exact key names and values provided. Everything is <b>CASE-SENSITIVE</b> and every name, word or number should be <b>EXACTLY</b> as this guide is showing!
+Editing the Windows Registry can cause serious system problems, including system instability as software might stop working as expected. Always create a <b><a href="https://support.microsoft.com/en-us/windows/system-restore-a5ae3ed9-07c4-fd56-45ee-096777ecd14e" target="_blank">restore point</a></b> beforehand, <b><a href="https://support.microsoft.com/en-us/topic/how-to-back-up-and-restore-the-registry-in-windows-855140ad-e318-2a13-2829-d428a2ab0692" target="_blank">back up the registry</a></b>, and follow steps strictly — using the exact key names and values provided. Everything is <b>CASE-SENSITIVE</b> and every name, word or number should be <b>EXACTLY</b> as this guide is showing!
 <hr>
 <b>1. 🕗 Show seconds in Windows Clock</b><br><br>
 <img width="95" height="50" alt="Time" src="https://github.com/user-attachments/assets/ab8d5da5-07fa-4c29-8886-7a8f2540d8a3" /><br><br>
@@ -67,5 +67,13 @@ V ✅ <b>(for all editions)</b><br>
 3. Right click parent folder <b>Explorer</b> and hover over <b>New ></b> and click <b>Key</b><br>
 4. Name it <b>Shell Icons</b> and hit Enter. Click the newly created folder and right click the empty space on the right side, hover over <b>New ></b> and click <b>String Value</b><br>
 5. Name it <b>29</b> and hit Enter. Double click it and set the value to <b>C:\Windows\System32\imageres.dll,197</b><br>
+6. <b>Restart the Windows</b> so it can take effect!
+<hr>
+<b>6. 🚀 Verbose Startup / Shutdown messages</b><br><br>
+<img width="540.5" height="360" alt="messages" src="https://github.com/user-attachments/assets/a62b6799-31af-4403-9a9b-51224de1f5bd" /><br>
+1. Search and open <b>Registry Editor</b> and press Yes when <i>User Account Control</i> pops up.<br>
+2. Go to <b>Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System</b> (copy and paste the path in the Registry Editor)<br>
+3. Look for DWORD value (values on the right side) named <b>VerboseStatus</b>. If it doesn't exist, right click the empty space on the right side, hover over <b>New ></b> and click <b>DWORD (32-bit) Value</b><br>
+4. Name it <b>VerboseStatus</b> and hit Enter. Double click it and change value from 0 to 1.<br>
 6. <b>Restart the Windows</b> so it can take effect!
 <hr>
