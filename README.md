@@ -89,3 +89,13 @@ V ✅ <b>(for all editions)</b><br>
 6. Open <b>Task Manager</b> go to <b>Processes</b> tab and search for <b>Windows Explorer</b> process. <b>Right click it and hit restart.</b><br>
 7. Explorer should go black for 1-2 seconds and when it appears again, it will be restored!
 <hr>
+<b>8. 📌 Restore Ribbon Command Bar</b><br><br>
+<img width="711.5" height="377.5" alt="ribbon" src="https://github.com/user-attachments/assets/26c75755-3f16-4620-99e7-71b2f6a7ee9e" /><br>
+1. Search and open <b>Registry Editor</b> and press Yes when <i>User Account Control</i> pops up.<br>
+2. Go to <b>Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions</b> (copy and paste the path in the Registry Editor)<br>
+3. Look for key (folders on the left side) named <b>Blocked</b>. If it doesn't exist, right click parent folder <b>Shell Extensions</b> and hover over <b>New ></b> and click <b>Key</b><br>
+4. Name it <b>Blocked</b> and hit Enter. Click the newly created folder and right click the empty space on the right side, hover over <b>New ></b> and click <b>String Value</b><br>
+5. Name it <b>{e2bf9676-5f8f-435c-97eb-11607a5bedf7}</b> and hit Enter. Don't change anything.<br>
+6. Open <b>Task Manager</b> go to <b>Processes</b> tab and search for <b>Windows Explorer</b> process. <b>Right click it and hit restart.</b><br>
+7. Explorer should go black for 1-2 seconds and when it appears again, it will be restored!
+<hr>
