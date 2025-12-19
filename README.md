@@ -79,3 +79,13 @@ V ✅ <b>(for all editions)</b><br>
 4. Name it <b>VerboseStatus</b> and hit Enter. Double click it and change value from 0 to 1.<br>
 6. <b>Restart the Windows</b> so it can take effect!
 <hr>
+<b>7. 📝 Restore Old right click Context Menu</b><br><br>
+<img width="588" height="323.1" alt="context" src="https://github.com/user-attachments/assets/ef7b88fb-a8d3-4dfd-bc1d-b8380824eec8" /><br>
+1. Search and open <b>Registry Editor</b> and press Yes when <i>User Account Control</i> pops up.<br>
+2. Go to <b>Computer\HKEY_CURRENT_USER\Software\Classes\CLSID</b> (copy and paste the path in the Registry Editor)<br>
+3. Right click parent folder <b>CLSID</b> and hover over <b>New ></b> and click <b>Key</b><br>
+4. Name it <b>{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}</b> and hit Enter. Right click the newly created folder and hover over <b>New ></b> and click <b>Key</b><br>
+5. Name it <b>InprocServer32</b> and hit Enter. Click the newly created folder and double click the <b>Default</b> string value. Don't change anything and click OK.<br>
+6. Open <b>Task Manager</b> go to <b>Processes</b> tab and search for <b>Windows Explorer</b> process. <b>Right click it and hit restart.</b><br>
+7. Explorer should go black for 1-2 seconds and when it appears again, it will be restored!
+<hr>
