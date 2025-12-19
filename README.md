@@ -49,7 +49,8 @@ V ✅ <b>(for all editions)</b><br>
 8. Go to <b>Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer</b> (copy and paste the path in the Registry Editor)<br>
 9. Right click the empty space on the right side, hover over <b>New ></b> and click <b>DWORD (32-bit) Value</b><br>
 10. Name it <b>HideRecommendedSection</b> and hit Enter. Double click it and change value from 0 to 1.<br>
-12. <b>Restart the Windows</b> so it can take effect!
+11. Open <b>Task Manager</b> go to <b>Processes</b> tab and search for <b>Windows Explorer</b> process. <b>Right click it and hit restart.</b><br>
+12. Explorer should go black for 1-2 seconds and when it appears again, Recommended section will be removed!
 <hr>
 <b>4. 🌐 Remove Web Search from the Search Menu</b><br><br>
 <img width="400" height="342.5" alt="web" src="https://github.com/user-attachments/assets/295164cd-6564-46cd-b026-8bc7deb1581c" /><br>
@@ -58,7 +59,8 @@ V ✅ <b>(for all editions)</b><br>
 3. Look for key (folders on the left side) named <b>Explorer</b>. If it doesn't exist, right click parent folder <b>Windows</b> and hover over <b>New ></b> and click <b>Key</b><br>
 4. Name it <b>Explorer</b> and hit Enter. Click the newly created folder and right click the empty space on the right side, hover over <b>New ></b> and click <b>DWORD (32-bit) Value</b><br>
 5. Name it <b>DisableSearchBoxSuggestions</b> and hit Enter. Double click it and change value from 0 to 1.<br>
-6. <b>Restart the Windows</b> so it can take effect!
+6. Open <b>Task Manager</b> go to <b>Processes</b> tab and search for <b>Windows Explorer</b> process. <b>Right click it and hit restart.</b><br>
+7. Explorer should go black for 1-2 seconds and when it appears again, Web Search will be removed!
 <hr>
 <b>5. ↗️ Remove shortcut arrow icon</b><br><br>
 <img width="160" height="96" alt="chrome" src="https://github.com/user-attachments/assets/dba2fa36-a095-4188-9b85-fe7bb94456d8" /><br>
