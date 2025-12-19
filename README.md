@@ -91,6 +91,10 @@ V ✅ <b>(for all editions)</b><br>
 <hr>
 <b>8. 📌 Restore Ribbon Command Bar</b><br><br>
 <img width="711.5" height="377.5" alt="ribbon" src="https://github.com/user-attachments/assets/26c75755-3f16-4620-99e7-71b2f6a7ee9e" /><br>
+
+🎛️ <b>Control Panel (not parmanent)</b><br>
+Open <b>Control Panel</b> and click <b>Up Arrow ↑</b> in the top left corner and it should bring it back temporarily!<br><br>
+<b>🗃️ In Registry Editor (parmanent)</b><br>
 1. Search and open <b>Registry Editor</b> and press Yes when <i>User Account Control</i> pops up.<br>
 2. Go to <b>Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions</b> (copy and paste the path in the Registry Editor)<br>
 3. Look for key (folders on the left side) named <b>Blocked</b>. If it doesn't exist, right click parent folder <b>Shell Extensions</b> and hover over <b>New ></b> and click <b>Key</b><br>
