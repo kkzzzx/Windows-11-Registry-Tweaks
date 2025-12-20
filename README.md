@@ -108,8 +108,8 @@ Open <b>Control Panel</b> and click <b>Up Arrow ↑</b> in the top left corner a
 (In the <b>Releases</b>, strings contain <b>default</b> values. Open with <b>Notepad</b> and change values according to your preferences, than save the file and run it! Manual changes are provided under.<br>
 1. Search and open <b>Registry Editor</b> and press Yes when <i>User Account Control</i> pops up.<br>
 2. Go to <b>Computer\HKEY_CURRENT_USER\Control Panel\Colors</b> (copy and paste the path in the Registry Editor)<br>
-3. Look for String values (values on the right side) named <b>Highlight</b> and <b>HotTrackingColor</b><br>
-4. <b>Highlight</b> changes highlight <b>BORDER</b>, <b>HotTrackingColor</b> changes highlight <b>FILL</b><br>
+3. Look for String values (values on the right side) named <b>Hilight</b> and <b>HotTrackingColor</b><br>
+4. <b>Hilight</b> changes highlight <b>BORDER</b>, <b>HotTrackingColor</b> changes highlight <b>FILL</b><br>
 5. Each value contains <b>RGB</b> value of a color! You can add your own but they should be this format without dots or commas. Examples:<br>
 Red 🟥 - 255 0 0<br>
 Blue 🟦 - 0 0 255<br>
