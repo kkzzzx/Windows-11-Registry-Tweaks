@@ -103,3 +103,20 @@ Open <b>Control Panel</b> and click <b>Up Arrow ↑</b> in the top left corner a
 6. Open <b>Task Manager</b> go to <b>Processes</b> tab and search for <b>Windows Explorer</b> process. <b>Right click it and hit restart.</b><br>
 7. Explorer should go black for 1-2 seconds and when it appears again, it will be restored!
 <hr>
+<b>9. 🎨 Change left click Highlight colors</b><br><br>
+<img width="351" height="144" alt="highlight" src="https://github.com/user-attachments/assets/f18d2abd-81bb-445d-833f-8defe3ec4591" /><br>
+(In the <b>Releases</b>, strings contain <b>default</b> values. Open with <b>Notepad</b> and change values according to your preferences, than save the file and run it! Manual changes are provided under.<br>
+1. Search and open <b>Registry Editor</b> and press Yes when <i>User Account Control</i> pops up.<br>
+2. Go to <b>Computer\HKEY_CURRENT_USER\Control Panel\Colors</b> (copy and paste the path in the Registry Editor)<br>
+3. Look for String values (values on the right side) named <b>Highlight</b> and <b>HotTrackingColor</b><br>
+4. <b>Highlight</b> changes highlight <b>BORDER</b>, <b>HotTrackingColor</b> changes highlight <b>FILL</b><br>
+5. Each value contains <b>RGB</b> value of a color! You can add your own but they should be this format without dots or commas. Examples:<br>
+Red 🟥 - 255 0 0<br>
+Blue 🟦 - 0 0 255<br>
+Green 🟩 - 0 255 0<br>
+Yellow 🟨 - 255 255 0<br>
+Purple 🟪 - 204 0 204<br>
+White ⬜ - 255 255 255<br>
+6. Double click the value you wanna change (border or fill), replace old rgb value with a new one and click OK.<br>
+7. <b>Restart the Windows</b> so it can take effect!
+<hr>
