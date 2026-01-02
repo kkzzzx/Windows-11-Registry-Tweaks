@@ -120,3 +120,12 @@ White ⬜ - 255 255 255<br>
 6. Double click the value you wanna change (border or fill), replace old rgb value with a new one and click OK.<br>
 7. <b>Restart the Windows</b> so it can take effect!
 <hr>
+<b>10. 🔒 Remove Lock Screen (PIN/Fingerprint screen shows up immediately)</b><br><br>
+<img width="700" height="394.1" alt="lock" src="https://github.com/user-attachments/assets/c67a9058-6b7b-4f30-82c6-607fa4dd82bd" /><br>
+1. Search and open <b>Registry Editor</b> and press Yes when <i>User Account Control</i> pops up.<br>
+2. Go to <b>Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows</b> (copy and paste the path in the Registry Editor)<br>
+3. Right click parent folder <b>Windows</b> and hover over <b>New ></b> and click <b>Key</b><br>
+4. Name it <b>Personalization</b> and hit Enter.  Click the newly created folder and right click the empty space on the right side, hover over <b>New ></b> and click <b>DWORD (32-bit) Value</b><br>
+5. Name it <b>NoLockScreen</b> and hit Enter. Double click it and change value from 0 to 1.<br>
+6. <b>Restart the Windows</b> so it can take effect!
+<hr>
