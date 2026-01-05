@@ -28,7 +28,7 @@ Editing the Windows Registry can cause serious system problems, including system
 <summary>Click to reveal step by step guide.</summary><br>
 1. Search for <b>View advanced system settings</b> and <b>System Properties</b> should open up.<br>
 2. Go to <b>Hardware</b> tab and click <b>Device Installation Settings</b>.<br>
-3. When Device Installation Settings appears select <b>No (your device might not work as expected)</b> (don't worry about the warning, it works perfectly fine but if, in rare circumstances, it doesn’t, you can always manually update the drivers)<br>
+3. When Device Installation Settings appears select <b>No (your device might not work as expected)</b> (don't worry about the warning, it works perfectly fine but if, in rare circumstances, it doesn’t, you can always manually update the drivers).<br>
 4. Press <b>Save changes</b> and close the window.<br><br>
 V 📢 <b>(for Pro / Enterprise editions only)</b><br>
 5. Search for <b>Edit group policy</b> and <b>Local Group Policy Editor</b> should open up.<br>
@@ -134,7 +134,7 @@ Open <b>Control Panel</b> and click <b>Up Arrow ↑</b> in the top left corner a
 1. Search and open <b>Registry Editor</b> and press Yes when <i>User Account Control</i> pops up.<br>
 2. Go to <b>Computer\HKEY_CURRENT_USER\Control Panel\Colors</b> (copy and paste the path in the Registry Editor)<br>
 3. Look for String values (values on the right side) named <b>Hilight</b> and <b>HotTrackingColor</b><br>
-4. <b>Hilight</b> changes highlight <b>BORDER</b>, <b>HotTrackingColor</b> changes highlight <b>FILL</b><br>
+4. <b>Hilight</b> changes highlight <b>BORDER</b>, <b>HotTrackingColor</b> changes highlight <b>FILL</b>.<br>
 5. Each value contains <b>RGB</b> value of a color! You can add your own but they should be this format without dots or commas. Examples:<br>
 Red 🟥 - 255 0 0<br>
 Blue 🟦 - 0 0 255<br>
@@ -156,5 +156,20 @@ White ⬜ - 255 255 255<br>
 4. Name it <b>Personalization</b> and hit Enter.  Click the newly created folder and right click the empty space on the right side, hover over <b>New ></b> and click <b>DWORD (32-bit) Value</b><br>
 5. Name it <b>NoLockScreen</b> and hit Enter. Double click it and change value from 0 to 1.<br>
 6. <b>Restart the Windows</b> so it can take effect!
+</details>
+<hr>
+<b>11. ⏩ Speed up Context Menu/Hover Menu show delays</b><br><br>
+<img src="https://github.com/user-attachments/assets/0e18f037-4a03-4722-9e51-20143f02b855" width="560" height="330.4" /><br>
+<details>
+<summary>Click to reveal step by step guide.</summary><br>
+(In the <b>Releases</b>, strings contain <b>default</b> values. Open with <b>Notepad</b> and change values according to your preferences, than save the file and run it! Manual changes are provided under.<br>
+1. Search and open <b>Registry Editor</b> and press Yes when <i>User Account Control</i> pops up.<br>
+2. Go to <b>Computer\HKEY_CURRENT_USER\Control Panel\Desktop</b> (copy and paste the path in the Registry Editor)<br>
+3. Look for String values (values on the right side) named <b>MenuShowDelay</b> and <b>MouseHoverTime</b><br>
+4. If any of these values don't exist, right click the empty space on the right side, hover over <b>New ></b> and click <b>String Value</b><br>
+5. Name it either <b>MenuShowDelay</b> or <b>MouseHoverTime</b>, according to what value is missing.<br>
+6. <b>MenuShowDelay</b> changes <b>right click Context Menu show delay</b>, <b>MouseHoverTime</b> changes <b>Hover Menu show delay</b>.<br>
+7. Each value contains value in <b>ms (miliseconds)</b>! Double click it and change value to desired number of miliseconds (e.g. 0, 50, 100, 150, 200... you name it!).<br>
+8. <b>Restart the Windows</b> so it can take effect!
 </details>
 <hr>
