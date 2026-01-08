@@ -146,7 +146,7 @@ White ⬜ - 255 255 255<br>
 7. <b>Restart the Windows</b> so it can take effect!
 </details>
 <hr>
-<b>10. 🔒 Remove Lock Screen (PIN/Fingerprint screen shows up immediately)</b><br><br>
+<b>10. 🔒 Remove Lock Screen (Sign-in screen shows up immediately)</b><br><br>
 <img width="700" height="394.1" alt="lock" src="https://github.com/user-attachments/assets/c67a9058-6b7b-4f30-82c6-607fa4dd82bd" /><br>
 <details>
 <summary>Click to reveal step by step guide.</summary><br>
@@ -159,7 +159,7 @@ White ⬜ - 255 255 255<br>
 </details>
 <hr>
 <b>11. ⏩ Speed up Context Menu/Hover Menu show delays</b><br><br>
-<img src="https://github.com/user-attachments/assets/0e18f037-4a03-4722-9e51-20143f02b855" width="560" height="330.4" /><br>
+<img width="560" height="330.4" alt="menudelays" src="https://github.com/user-attachments/assets/0e18f037-4a03-4722-9e51-20143f02b855" /><br>
 <details>
 <summary>Click to reveal step by step guide.</summary><br>
 (In the <b>Releases</b>, strings contain <b>default</b> values. Open with <b>Notepad</b> and change values according to your preferences, than save the file and run it! Manual changes are provided under.<br>
@@ -170,6 +170,22 @@ White ⬜ - 255 255 255<br>
 5. Name it either <b>MenuShowDelay</b> or <b>MouseHoverTime</b>, according to what value is missing.<br>
 6. <b>MenuShowDelay</b> changes <b>right click Context Menu show delay</b>, <b>MouseHoverTime</b> changes <b>Hover Menu show delay</b>.<br>
 7. Each value contains value in <b>ms (miliseconds)</b>! Double click it and change value to desired number of miliseconds (e.g. 0, 50, 100, 150, 200... you name it!).<br>
+8. <b>Restart the Windows</b> so it can take effect!
+</details>
+<hr>
+<b>12. ⚙️ Remove Home page from Settings</b><br><br>
+<img width="614.4" height="380.4" alt="settings" src="https://github.com/user-attachments/assets/3290d782-dd67-42b9-bf7b-bc9cd3a3d21f" /><br>
+<details>
+<summary>Click to reveal step by step guide.</summary><br>
+V 📢 <b>(for Pro / Enterprise editions only)</b><br>
+1. Search for <b>Edit group policy</b> and <b>Local Group Policy Editor</b> should open up.<br>
+2. Go to <b>Computer Configuration > Administrative Templates > Control Panel</b><br>
+3. Look for <b>Settings Page Visibility</b>, double click it, check <b>Enabled</b>, in the <b>Options</b> box below type <b>hide:home</b> and click Apply > OK, then close window.<br><br>
+V ✅ <b>(for all editions)</b><br>
+4. Search and open <b>Registry Editor</b> and press Yes when <i>User Account Control</i> pops up.<br>
+5. Go to <b>Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer</b> (copy and paste the path in the Registry Editor)<br>
+6. Right click the empty space on the right side, hover over <b>New ></b> and click <b>String Value</b><br>
+7. Name it <b>SettingsPageVisibility</b> and hit Enter. Double click it and change value to <b>hide:home</b>.<br>
 8. <b>Restart the Windows</b> so it can take effect!
 </details>
 <hr>
