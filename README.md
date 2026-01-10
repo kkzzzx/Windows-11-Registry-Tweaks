@@ -105,7 +105,7 @@ V ✅ <b>(for all editions)</b><br>
 2. Go to <b>Computer\HKEY_CURRENT_USER\Software\Classes\CLSID</b> (copy and paste the path in the Registry Editor)<br>
 3. Right click parent folder <b>CLSID</b> and hover over <b>New ></b> and click <b>Key</b><br>
 4. Name it <b>{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}</b> and hit Enter. Right click the newly created folder and hover over <b>New ></b> and click <b>Key</b><br>
-5. Name it <b>InprocServer32</b> and hit Enter. Click the newly created folder and double click the <b>Default</b> string value. Don't change anything and click OK.<br>
+5. Name it <b>InprocServer32</b> and hit Enter. Click the newly created folder and double click the <b>(Default)</b> string value. Don't change anything and click OK.<br>
 6. Open <b>Task Manager</b> go to <b>Processes</b> tab and search for <b>Windows Explorer</b> process. <b>Right click it and hit restart.</b><br>
 7. Explorer should go black for 1-2 seconds and when it appears again, it will be restored!
 </details>
@@ -187,5 +187,24 @@ V ✅ <b>(for all editions)</b><br>
 6. Right click the empty space on the right side, hover over <b>New ></b> and click <b>String Value</b><br>
 7. Name it <b>SettingsPageVisibility</b> and hit Enter. Double click it and change value to <b>hide:home</b>.<br>
 8. <b>Restart the Windows</b> so it can take effect!
+</details>
+<hr>
+<b>13. 📱 Add custom app to right click/Show more options Context Menu (on Desktop)</b><br><br>
+<img width="493" height="418" alt="customapp" src="https://github.com/user-attachments/assets/91df106f-9df5-4693-9a9a-ee1c781cd267" /><br>
+<details>
+<summary>Click to reveal step by step guide.</summary><br>
+(In the <b>Releases</b>, file aims to add <b>File Explorer</b> as this guide is showing. Open with <b>Notepad</b> and change values according to your custom app, than save the file and run it! Manual changes are provided under.<br>
+1. Search and open <b>Registry Editor</b> and press Yes when <i>User Account Control</i> pops up.<br>
+2. Go to <b>Computer\HKEY_CLASSES_ROOT\Directory\Background\shell</b> (copy and paste the path in the Registry Editor)<br>
+3. Locate the desired <b>app .exe</b> in the <b>File Explorer</b>. Right click it and click <b>Copy as path</b> option.<br>
+4. Go back to <b>Registry Editor</b>. Right click parent folder <b>shell</b> and hover over <b>New ></b> and click <b>Key</b><br>
+5. Name it <b>Explorer</b> (or whatever your app's name is) and hit Enter. Right click the newly created folder <b>Explorer</b> (or whatever your app's name is) and hover over <b>New ></b> and click <b>Key</b><br>
+6. Name it <b>command</b> and hit Enter.<br>
+7. Click the parent folder <b>Explorer</b> (or whatever your app's name is) and double click the <b>(Default)</b> string value. Change it to <b>Open File Explorer</b> (or whatever you want to be displayed in the Context Menu) and click OK.<br>
+8. Right click that same folder <b>Explorer</b> (or whatever your app's name is), hover over <b>New ></b> and click <b>String Value</b><br>
+9. Name it <b>Icon</b> and hit Enter. Double click it and paste the <b>PATH</b> to your app that you copied earlier. Remove <b>quotation marks ( " )</b> from both the very start and end of the pasted text and hit Enter.<br>
+10. Click the child folder <b>command</b> and double click the <b>(Default)</b> string value (this is an actual "starter" for the app). Paste the <b>PATH</b> to your app that you copied earlier. Remove <b>quotation marks ( " )</b> from both the very start and end of the pasted text and hit Enter.<br>
+11. Open <b>Task Manager</b> go to <b>Processes</b> tab and search for <b>Windows Explorer</b> process. <b>Right click it and hit restart.</b><br>
+12. Explorer should go black for 1-2 seconds and when it appears again, it will be added!<br>
 </details>
 <hr>
